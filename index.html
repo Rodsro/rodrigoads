@@ -1,0 +1,128 @@
+<!DOCTYPE html5>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Atividade Prática</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<!--Menu de navegação-->
+		<nav id="navbar">
+			<ul>
+				<li><a href="#about" onclick="showContent('about')">SOBRE MIM</a></li>
+				<li><a href="#education" onclick="showContent('education')">EDUCAÇÃO</a></li>
+				<li><a href="#portfolio" onclick="showContent('portfolio')">PORTIFÓLIO</a></li>
+				<li><a href="#contact" onclick="showContent('contact')">ENTRE EM CONTATO</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<!--Criação das sections, onde cada item do menu será detalhado: "SOBRE MIM, EDUCAÇÃO, IDIOMAS, PORTFÓLIO e CONTATO"-->
+		<section id="about" class="content-section">
+			<!--Parte SOBRE MIM-->
+			<h1>SOBRE MIM</h1>
+			<p>Olá, meu nome é Rodrigo. <br/><br/>
+
+				Sou estudante de Análise e Desenvolvimento de Sistemas na Uninter.<br/><br/>
+				Posso me descrever como uma pessoa focada e curiosa. 
+				No meu tempo livre eu gosto de jogar video-game e assistir séries e filmes. Atualmente estou trabalhando como Desenvolvedor Salesforce, que é um CRM voltado para gestão de negócios e vendas.
+				Ainda não possuo graduação voltada para a área de T.I. e por isso busco esse diploma em ADS.
+				Antes desse atual trabalho como desenvolvedor já trabalhei como barman, gerente de vendas e consultor ambiental.
+			</p>
+		</section>
+		<!--Parte EDUCAÇÃO-->
+		<section id="education" class="content-section">
+			<h1>FORMAÇÃO ACADÊMICA</h1>
+			<p>
+				Graduação em Engenheira Ambiental e Sanitária (2018)<br/>
+				Licenciatura Plena em Matemática (2019)<br/>
+				Pós-Graduação em Engenharia e Segurança do Trabalho (2020)<br/>
+				Graduando em Análise e Desenvolvimento de Sistemas (Previsão de Conclusão em 2025)
+			
+			</p>
+
+			<h1>IDIOMAS</h1>
+			<p>
+				Ingês Intermediário <br/>
+				Espanhol Básico
+			
+			</p>
+		</section>
+		<!--Parte PORTFOLIO-->
+		<section id="portfolio" class="content-section">
+			<h1>PORTIFÓLIO</h1>
+
+			<h3>Vamos jogar um pouco de jogo da velha antes de ir para o GitHub?</h3>
+
+			<!--Aqui coloquei um jogo da velha simples, pra deixar um pouco mais animado esse portfólio.-->
+			<div class="portfolio-colunmns">
+				<div class="left-column">
+					<!--Criação da "velha" do jogo-->
+					<div class="area">
+						<div data-item="a1" class="item b r"></div>
+						<div data-item="a2" class="item b r"></div>
+						<div data-item="a3" class="item b"></div>
+				
+						<div data-item="b1" class="item b r"></div>
+						<div data-item="b2" class="item b r"></div>
+						<div data-item="b3" class="item b"></div>
+				
+						<div data-item="c1" class="item r"></div>
+						<div data-item="c2" class="item r"></div>
+						<div data-item="c3" class="item"></div>
+					</div>
+				<!--Criação do placar para mostrar os resultados-->
+					<div class="info">
+						<div class="infoitem">
+							<div class="infotitulo">A vez é:</div>
+							<div class="infocorpo vez">--</div>
+						</div>
+						<div class="infoitem">
+							<div class="infotitulo">Vencedor:</div>
+							<div class="infocorpo resultado">--</div>
+						</div>
+						<button class="reset">Resetar</button>
+					</div>
+				</div>
+				
+			   <!--Parte da direita onde direciona mostrando o link para o GitHub-->
+			
+				<div class="right-column">
+					<h3>Tenho alguns projetos no GitHub para mostrar melhor um pouco da minha evolução durante minha fase de aprendizado como desenvolvedor.</h3>
+					<p>Link para o GitHub: <a href="https://github.com/Rodsro" target="_blank">https://github.com/Rodsro</a></p>
+				</div>
+			</div>            
+
+			
+
+			<!--Parte de CONTATO-->
+		</section>
+		<section id="contact" class="content-section">
+			<h1>ENTRE EM CONTATO COMIGO</h1>
+			<form id="contact-form">
+				<label for="name">Nome:</label>
+				<input type="text" id="name" name="name" required>
+				<br/><br/>
+				<label for="email">E-mail:</label>
+				<input type="email" id="email" name="email" required>
+				<br/><br/>
+				<label for="message">Digite sua mensagem:</label>
+				<textarea id="message" name="message" required></textarea>
+				<br/><br/>
+				<button type="submit">Enviar</button>
+			</form>
+		</section>
+	</main>
+
+
+	<!--Parte do rodapé-->
+	<footer>
+		<p>Criado por Rodrigo Oliveira</p>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+</html>
